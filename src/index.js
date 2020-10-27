@@ -2,8 +2,6 @@
 
 import express from "express";
 import bodyParser from "body-parser";
-import _ from "./utilities/env";
-import routes from "./routes/router";
 import logger from "./utilities/logger";
 import cors from "cors";
 
