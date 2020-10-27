@@ -6,6 +6,7 @@ import logger from "./utilities/logger";
 import cors from "cors";
 
 let app = express();
+app.disable("x-powered-by");
 
 app.get("/health", (req, res) => {
   return res.status(200).json({
