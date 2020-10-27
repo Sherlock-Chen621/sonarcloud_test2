@@ -14,6 +14,13 @@ app.get("/health", (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  return res.status(200).json({
+    status: 200,
+    descriptions: "Health - 1"
+  });
+});
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(
